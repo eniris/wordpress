@@ -1,0 +1,941 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Shortcodes Lib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-06 16:55+0100\n"
+"PO-Revision-Date: 2013-03-06 17:14+0100\n"
+"Last-Translator: SIMALIS <information@simalis.net>\n"
+"Language-Team: Business Geografic <information@simalis.net>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;_n;_c;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../my-shortcode-list.php:20
+msgid "Shortcodes: "
+msgstr "Shortcodes : "
+
+#: ../my-shortcode-list.php:22
+msgid "-- choose --"
+msgstr "-- choisir --"
+
+#: ../my-shortcode-list.php:23
+msgid "Spacing"
+msgstr "Espacement"
+
+#: ../my-shortcode-list.php:24
+msgid "Clear Floats"
+msgstr "Nettoyage de \"float\""
+
+#: ../my-shortcode-list.php:25
+msgid "Divider"
+msgstr "S&eacute;parateur"
+
+#: ../my-shortcode-list.php:26
+msgid "Google Map"
+msgstr "Carte Google"
+
+#: ../my-shortcode-list.php:27
+msgid "Heading"
+msgstr "Titre"
+
+#: ../my-shortcode-list.php:28
+msgid "Highlight"
+msgstr "Sur-ligner"
+
+#: ../my-shortcode-list.php:29
+msgid "Tabs"
+msgstr "Onglets"
+
+#: ../my-shortcode-list.php:30
+msgid "Toggle"
+msgstr ""
+
+#: ../my-shortcode-list.php:31
+msgid "Accordion"
+msgstr "Accord&eacute;on"
+
+#: ../my-shortcode-list.php:32
+msgid "Button"
+msgstr "Bouton"
+
+#: ../my-shortcode-list.php:33
+msgid "Box"
+msgstr "Boite"
+
+#: ../my-shortcode-list.php:34
+msgid "Column"
+msgstr "Colonne"
+
+#: ../my-shortcode-list.php:35
+msgid "Social"
+msgstr "Social"
+
+#: ../my-shortcode-list.php:36
+msgid "Testimonial"
+msgstr "T&eacute;moignage"
+
+#: ../my-shortcode-list.php:37
+msgid "Pricing"
+msgstr "Prix"
+
+#: ../my-shortcode-list.php:41
+msgid "Insert Shortcode"
+msgstr "Ins&eacute;rer le shortcode"
+
+#: ../my-shortcode-list.php:52 ../my-shortcode-list.php:297
+msgid "Size"
+msgstr "Taille"
+
+#: ../my-shortcode-list.php:54
+msgid "Height space (in pixels)"
+msgstr "hauteur d espace (en pixels)"
+
+#: ../my-shortcode-list.php:62 ../my-shortcode-list.php:179
+#: ../my-shortcode-list.php:198 ../my-shortcode-list.php:379
+msgid "No more informations or attributes..."
+msgstr "Acune information ou attribut..."
+
+#: ../my-shortcode-list.php:70
+msgid "Style"
+msgstr "Style"
+
+#: ../my-shortcode-list.php:82 ../my-shortcode-list.php:136
+msgid "Margin top"
+msgstr "Marge haute"
+
+#: ../my-shortcode-list.php:84 ../my-shortcode-list.php:89
+msgid "(in pixels)"
+msgstr "(en pixels)"
+
+#: ../my-shortcode-list.php:87 ../my-shortcode-list.php:141
+msgid "Margin bottom"
+msgstr "Marge basse"
+
+#: ../my-shortcode-list.php:94 ../my-shortcode-list.php:99
+msgid "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"
+msgstr ""
+
+#: ../my-shortcode-list.php:98 ../my-shortcode-list.php:131
+#: ../my-shortcode-list.php:187 ../my-shortcode-list.php:229
+#: ../my-shortcode-list.php:341
+msgid "Title"
+msgstr "Titre"
+
+#: ../my-shortcode-list.php:103
+msgid "Zoom"
+msgstr "Zoom"
+
+#: ../my-shortcode-list.php:108
+msgid "Height"
+msgstr "Hauteur"
+
+#: ../my-shortcode-list.php:115 ../my-shortcode-list.php:132
+msgid "This is my title"
+msgstr "Ceci est mon titre"
+
+#: ../my-shortcode-list.php:119
+msgid "Type"
+msgstr "Type"
+
+#: ../my-shortcode-list.php:146 ../my-shortcode-list.php:267
+msgid "Text align"
+msgstr "Alignement du texte"
+
+#: ../my-shortcode-list.php:148 ../my-shortcode-list.php:269
+#: ../my-shortcode-list.php:284
+msgid "left"
+msgstr "gauche"
+
+#: ../my-shortcode-list.php:149 ../my-shortcode-list.php:270
+#: ../my-shortcode-list.php:285
+msgid "right"
+msgstr "droite"
+
+#: ../my-shortcode-list.php:150 ../my-shortcode-list.php:271
+msgid "center"
+msgstr "centre"
+
+#: ../my-shortcode-list.php:158 ../my-shortcode-list.php:160
+msgid "highlighted text"
+msgstr "Texte sur-lign&eacute;"
+
+#: ../my-shortcode-list.php:162 ../my-shortcode-list.php:206
+#: ../my-shortcode-list.php:256
+msgid "Color"
+msgstr "Couleur"
+
+#: ../my-shortcode-list.php:164 ../my-shortcode-list.php:260
+msgid "yellow"
+msgstr "jaune"
+
+#: ../my-shortcode-list.php:165 ../my-shortcode-list.php:212
+#: ../my-shortcode-list.php:261
+msgid "blue"
+msgstr "blue"
+
+#: ../my-shortcode-list.php:166 ../my-shortcode-list.php:208
+#: ../my-shortcode-list.php:259
+msgid "green"
+msgstr "vert"
+
+#: ../my-shortcode-list.php:167 ../my-shortcode-list.php:210
+#: ../my-shortcode-list.php:262
+msgid "red"
+msgstr "rouge"
+
+#: ../my-shortcode-list.php:168 ../my-shortcode-list.php:258
+msgid "gray"
+msgstr "gris"
+
+#: ../my-shortcode-list.php:170
+msgid "background color highlight"
+msgstr "couleur d arri&egrave;re plan du surlignage"
+
+#: ../my-shortcode-list.php:176 ../my-shortcode-list.php:178
+msgid "First Tab title"
+msgstr "Titre du premier onglet"
+
+#: ../my-shortcode-list.php:176 ../my-shortcode-list.php:178
+msgid "First tab content"
+msgstr "Contenu du premier onglet"
+
+#: ../my-shortcode-list.php:176 ../my-shortcode-list.php:178
+msgid "Second Tab title"
+msgstr "Titre du second onglet"
+
+#: ../my-shortcode-list.php:176 ../my-shortcode-list.php:178
+msgid "Second Tab Content."
+msgstr "Contenu du second onglet"
+
+#: ../my-shortcode-list.php:183 ../my-shortcode-list.php:188
+msgid "This Is Your Toggle Title"
+msgstr ""
+
+#: ../my-shortcode-list.php:183 ../my-shortcode-list.php:185
+msgid "Your Toggle Content"
+msgstr ""
+
+#: ../my-shortcode-list.php:195 ../my-shortcode-list.php:197
+msgid "Section 1"
+msgstr ""
+
+#: ../my-shortcode-list.php:195 ../my-shortcode-list.php:197
+msgid "Accordion Content"
+msgstr "Contenu de l accord&eacute;on"
+
+#: ../my-shortcode-list.php:195 ../my-shortcode-list.php:197
+msgid "Section 2"
+msgstr ""
+
+#: ../my-shortcode-list.php:202 ../my-shortcode-list.php:230
+msgid "Visit Site"
+msgstr "Visiter le site"
+
+#: ../my-shortcode-list.php:202 ../my-shortcode-list.php:204
+msgid "Button Text"
+msgstr "Texte du bouton"
+
+#: ../my-shortcode-list.php:209
+msgid "black"
+msgstr ""
+
+#: ../my-shortcode-list.php:211
+msgid "orange"
+msgstr ""
+
+#: ../my-shortcode-list.php:213
+msgid "rosy"
+msgstr ""
+
+#: ../my-shortcode-list.php:214
+msgid "pink"
+msgstr ""
+
+#: ../my-shortcode-list.php:215
+msgid "brown"
+msgstr ""
+
+#: ../my-shortcode-list.php:216
+msgid "purple"
+msgstr ""
+
+#: ../my-shortcode-list.php:217
+msgid "gold"
+msgstr ""
+
+#: ../my-shortcode-list.php:218
+msgid "teal"
+msgstr ""
+
+#: ../my-shortcode-list.php:219
+msgid "navy"
+msgstr ""
+
+#: ../my-shortcode-list.php:224 ../my-shortcode-list.php:336
+msgid "URL"
+msgstr ""
+
+#: ../my-shortcode-list.php:226 ../my-shortcode-list.php:338
+msgid "with http://..."
+msgstr "avec http://..."
+
+#: ../my-shortcode-list.php:234 ../my-shortcode-list.php:346
+msgid "Target"
+msgstr "Cible"
+
+#: ../my-shortcode-list.php:236 ../my-shortcode-list.php:348
+msgid "blank"
+msgstr ""
+
+#: ../my-shortcode-list.php:237 ../my-shortcode-list.php:314
+#: ../my-shortcode-list.php:349
+msgid "self"
+msgstr ""
+
+#: ../my-shortcode-list.php:238 ../my-shortcode-list.php:350
+msgid "parent"
+msgstr ""
+
+#: ../my-shortcode-list.php:239 ../my-shortcode-list.php:351
+msgid "top"
+msgstr "haut"
+
+#: ../my-shortcode-list.php:244
+msgid "Border radius"
+msgstr "Arrondis"
+
+#: ../my-shortcode-list.php:246
+msgid "pixels (with unit)"
+msgstr "pixels (avec unit&eacute;)"
+
+#: ../my-shortcode-list.php:252 ../my-shortcode-list.php:254
+msgid "Box gray Content"
+msgstr "Contenu de la boite grise"
+
+#: ../my-shortcode-list.php:276
+msgid "Width"
+msgstr "Largeur"
+
+#: ../my-shortcode-list.php:278
+msgid "pixels or percent"
+msgstr "pixels ou pourcent"
+
+#: ../my-shortcode-list.php:281
+msgid "Float"
+msgstr ""
+
+#: ../my-shortcode-list.php:283
+msgid "none"
+msgstr ""
+
+#: ../my-shortcode-list.php:293
+msgid "Content"
+msgstr "Contenu"
+
+#: ../my-shortcode-list.php:299
+msgid "one-half"
+msgstr "1/2 (un demi)"
+
+#: ../my-shortcode-list.php:300
+msgid "one-third"
+msgstr "1/3 (un tier)"
+
+#: ../my-shortcode-list.php:301
+msgid "two-third"
+msgstr "2/3 (deux tiers)"
+
+#: ../my-shortcode-list.php:302
+msgid "one-fourth"
+msgstr "1/4 (un quart)"
+
+#: ../my-shortcode-list.php:303
+msgid "three-fourth"
+msgstr "3/4 (trois  quart)"
+
+#: ../my-shortcode-list.php:304
+msgid "one-fift"
+msgstr "1/5 (un cinqui&egrave;me)"
+
+#: ../my-shortcode-list.php:305
+msgid "two-fift"
+msgstr "2/5 (deux  cinqui&egrave;me)"
+
+#: ../my-shortcode-list.php:306
+msgid "one-sixth"
+msgstr "1/6 (un sixi&egrave;me)"
+
+#: ../my-shortcode-list.php:307
+msgid "five-sixth"
+msgstr "5/6 (cinq  sixi&egrave;me)"
+
+#: ../my-shortcode-list.php:312
+msgid "Position"
+msgstr "Position"
+
+#: ../my-shortcode-list.php:315
+msgid "first"
+msgstr "premi&egrave;re"
+
+#: ../my-shortcode-list.php:316
+msgid "last"
+msgstr "derni&egrave;re"
+
+#: ../my-shortcode-list.php:324 ../my-shortcode-list.php:342
+msgid "Follow Us"
+msgstr "Suivez nous"
+
+#: ../my-shortcode-list.php:328
+msgid "Icon"
+msgstr "Icone"
+
+#: ../my-shortcode-list.php:330
+msgid "twitter"
+msgstr ""
+
+#: ../my-shortcode-list.php:331
+msgid "facebook"
+msgstr ""
+
+#: ../my-shortcode-list.php:356
+msgid "rel"
+msgstr "rel"
+
+#: ../my-shortcode-list.php:364 ../my-shortcode-list.php:366
+msgid "Your testimonial"
+msgstr "Votre t&eacute;moignage"
+
+#: ../my-shortcode-list.php:368
+msgid "Author"
+msgstr "Auteur"
+
+#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+msgid "Basic"
+msgstr ""
+
+#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+msgid "$19.99"
+msgstr ""
+
+#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+msgid "per month"
+msgstr "par mois"
+
+#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+msgid "Sign Up"
+msgstr "S inscrire"
+
+#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+msgid "30GB Storage"
+msgstr ""
+
+#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+msgid "512MB Ram"
+msgstr ""
+
+#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+msgid "10 databases"
+msgstr ""
+
+#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+msgid "1,000 Emails"
+msgstr ""
+
+#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+msgid "25GB Bandwidth"
+msgstr ""
+
+#: ../includes/shortcode-editor-select.php:13
+msgid "Shortcodes library"
+msgstr "Librairie de shortcodes"
+
+#~ msgid "This event has expired."
+#~ msgstr "Cet événement a expiré."
+
+#~ msgid "From"
+#~ msgstr "Du"
+
+#~ msgid "Date:"
+#~ msgstr "Date :"
+
+#~ msgid "Hours:"
+#~ msgstr "Horaires :"
+
+#~ msgid "Place:"
+#~ msgstr "Lieu :"
+
+#~ msgid "Google Maps location for:"
+#~ msgstr "Géolocalisation Google Maps de :"
+
+#~ msgid "Pages:"
+#~ msgstr "Pages :"
+
+#~ msgid "Posted by"
+#~ msgstr "Publié par"
+
+#~ msgid "in"
+#~ msgstr "dans"
+
+#~ msgid "<em>Tags</em>"
+#~ msgstr "<em>Mots clés</em>"
+
+#~ msgid "Edit"
+#~ msgstr "Modifier"
+
+#~ msgid "Top"
+#~ msgstr "Haut"
+
+#~ msgid "Author Archives: %s"
+#~ msgstr "Archives de l'auteur %s"
+
+#~ msgid "About %s"
+#~ msgstr "A propos %s"
+
+#~ msgid "One"
+#~ msgstr "Un"
+
+#~ msgid "Two"
+#~ msgstr "Deux"
+
+#~ msgid "Three"
+#~ msgstr "Trois"
+
+#~ msgid "Four"
+#~ msgstr "Quatre"
+
+#~ msgid "Five"
+#~ msgstr "Cinq"
+
+#~ msgid "One Response to %2$s"
+#~ msgstr "Une réponse à %2$s"
+
+#~ msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+#~ msgstr "<span class=\"meta-nav\">&larr;</span> Commentaires plus anciens"
+
+#~ msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "Commentaires plus récents <span class=\"meta-nav\">&rarr;</span>"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Les commentaires sont fermés."
+
+#~ msgid "Search Results for: %s"
+#~ msgstr "Résultat de la recherche : %s"
+
+#~ msgid "Nothing Found"
+#~ msgstr "Aucun résultat"
+
+#~ msgid "Read also:"
+#~ msgstr "Lire aussi :"
+
+#~ msgid "Category Archives: %s"
+#~ msgstr "Archives de la catégorie %s"
+
+#~ msgid "(optional)"
+#~ msgstr "(optionnel)"
+
+#~ msgid "General META description"
+#~ msgstr "META général description"
+
+#~ msgid "Tag Archives: %s"
+#~ msgstr "Archives du mot clé %s"
+
+#~ msgid "Return to %s"
+#~ msgstr "Retourner à %s"
+
+#~ msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "Voir la suite <span class=\"meta-nav\">&rarr;</span>"
+
+#~ msgid "<span class=\"meta-nav\">&larr;</span> Previous results"
+#~ msgstr "<span class=\"meta-nav\">&larr;</span> Résultats précédents"
+
+#~ msgid "Next results <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "Résultats suivants <span class=\"meta-nav\">&rarr;</span>"
+
+#~ msgid "Not Found"
+#~ msgstr "Introuvable"
+
+#~ msgid ""
+#~ "Apologies, but no results were found for the requested archive. Perhaps "
+#~ "searching will help find a related post."
+#~ msgstr ""
+#~ "Toutes nos excuses, mais aucun résultat n'a été trouvé. Peut-être qu'une "
+#~ "recherche vous permettra de trouver un article connexe."
+
+#~ msgid "Leave a comment"
+#~ msgstr "Ajouter un commentaire"
+
+#~ msgid "1 Comment"
+#~ msgstr "1 Commentaire"
+
+#~ msgid "% Comments"
+#~ msgstr "% Commentaires"
+
+#~ msgid "404 Not Found !"
+#~ msgstr "404 page introuvable !"
+
+#~ msgid "Posted on"
+#~ msgstr "Publié le"
+
+#~ msgid "Continue reading"
+#~ msgstr "Lire la suite..."
+
+#~ msgid "Log In"
+#~ msgstr "S'identifer"
+
+#~ msgid "Remember me"
+#~ msgstr "Se souvenir de moi"
+
+#~ msgid "Forgotten password?"
+#~ msgstr "Mot de passe oublié ?"
+
+#~ msgid "User display name:"
+#~ msgstr "Nom affiché sur le site :"
+
+#~ msgid "User email:"
+#~ msgstr "Votre email :"
+
+#~ msgid "User url:"
+#~ msgstr "URL de l'utilisateur :"
+
+#~ msgid "User description:"
+#~ msgstr "Description de l'utilisateur :"
+
+#~ msgid "Logout"
+#~ msgstr "Se déconnceter"
+
+#~ msgid "(more)"
+#~ msgstr "(plus)"
+
+#~ msgid "Daily Archives: <span>%s</span>"
+#~ msgstr "Archives journalières : <span>%s</span>"
+
+#~ msgid "Monthly Archives: <span>%s</span>"
+#~ msgstr "Archives mensuelles : <span>%s</span>"
+
+#~ msgid "Yearly Archives: <span>%s</span>"
+#~ msgstr "Archives annuelles : <span>%s</span>"
+
+#~ msgid "Blog Archives"
+#~ msgstr "Archives du blog"
+
+#~ msgid "Home"
+#~ msgstr "Accueil"
+
+#~ msgid "Categories"
+#~ msgstr "Catégories"
+
+#~ msgid "Posts"
+#~ msgstr "Articles"
+
+#~ msgid "Tags"
+#~ msgstr "Mots clés"
+
+#~ msgid "Feeds"
+#~ msgstr "Flux RSS"
+
+#~ msgid "Main RSS"
+#~ msgstr "RSS principal"
+
+#~ msgid "Comment Feed"
+#~ msgstr "Flus RSS des commentaires"
+
+#~ msgid "Login"
+#~ msgstr "S'identifier"
+
+#~ msgid "Register"
+#~ msgstr "S'enregistrer"
+
+#~ msgid "Forgot?"
+#~ msgstr "Oublié ?"
+
+#~ msgid "Check your email for the password and then return to log in."
+#~ msgstr ""
+#~ "Vérifiez vos emails pour connaitre votre mon de passe, puis revenez vous "
+#~ "connecter."
+
+#~ msgid "Check your email to reset your password."
+#~ msgstr "Vérifiez vos emails pour réinitialiser votre mot de passe."
+
+#~ msgid "Have an account?"
+#~ msgstr "Vous êtes déjà membre ?"
+
+#~ msgid "Please enter your username and password"
+#~ msgstr "Veuillez indiquer votre identifiant et mot de passe."
+
+#~ msgid "Username"
+#~ msgstr "Identifiant"
+
+#~ msgid "Password"
+#~ msgstr "Mot de passe"
+
+#~ msgid "Register for this site!"
+#~ msgstr "Inscrivez-vous à ce site!"
+
+#~ msgid "Sign up now for the good stuff."
+#~ msgstr "Inscrivez-vous pour êtres présent sur ce site."
+
+#~ msgid "Your Email"
+#~ msgstr "Votre email"
+
+#~ msgid "Lose something?"
+#~ msgstr "Mot de passe oublié ?"
+
+#~ msgid "Enter your username or email to reset your password."
+#~ msgstr ""
+#~ "Veuillez indiquer votre identifiant ou adresse email pour réinitialiser "
+#~ "votre mot de passe."
+
+#~ msgid "Username or Email"
+#~ msgstr "Identifiant ou email"
+
+#~ msgid "Reset my password"
+#~ msgstr "Réinitialiser mon mot de passe"
+
+#~ msgid "Welcome"
+#~ msgstr "Bienvenue"
+
+#~ msgid "You&rsquo;re logged in as"
+#~ msgstr "Vous êtes connecté avec l'identifiant :"
+
+#~ msgid "Edit your profile"
+#~ msgstr "Modifier votre profil"
+
+#~ msgid "Latest news"
+#~ msgstr "Actualité récente"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Votre commentaire est en attente de validation."
+
+#~ msgid "(Edit)"
+#~ msgstr "(Modifier)"
+
+#~ msgid "No items."
+#~ msgstr "Aucune donnée."
+
+#~ msgid "<span class=\"%1$s\">Posted on</span> %2$s"
+#~ msgstr "<span class=\"%1$s\">Posté le</span> %2$s"
+
+#~ msgid "Choose shortcode:"
+#~ msgstr "Choisir le shrotcode :"
+
+#~ msgid "Main Navigation"
+#~ msgstr "Menu principal"
+
+#~ msgid "Foot Navigation"
+#~ msgstr "Menu de pied de page"
+
+#~ msgid "General Post Options"
+#~ msgstr "Options générales de l'article"
+
+#~ msgid "Event date begin "
+#~ msgstr "Date de début de l'évènement"
+
+#~ msgid "Date begin format : dd-mm-yyyy"
+#~ msgstr "Date de début au format jj-mm-aaaa"
+
+#~ msgid "Event date end "
+#~ msgstr "Date de fin  de l'évènement"
+
+#~ msgid "Date end format : dd-mm-yyyy"
+#~ msgstr "Date de fin au format jj-mm-aaaa"
+
+#~ msgid "Event Time begin "
+#~ msgstr "Heure de début"
+
+#~ msgid "Event Time format : hh:mm"
+#~ msgstr "Format de l'heure de l'événement : hh:mm"
+
+#~ msgid "Event Time end "
+#~ msgstr "Heure de fin"
+
+#~ msgid "Event place "
+#~ msgstr "Lieu de l'évènement"
+
+#~ msgid "Use simple location or address."
+#~ msgstr "Indiquer un lieu simple ou une adresse."
+
+#~ msgid "Event location link "
+#~ msgstr "Lien de localisation de l'évènement"
+
+#~ msgid "Add Google Maps location link."
+#~ msgstr "Afficher un lien Google Maps de géolocalisation."
+
+#~ msgid "Event Page Options"
+#~ msgstr "Options de la page d'évènement"
+
+#~ msgid "Testimonial Page Options"
+#~ msgstr "Options de la page de témoigage"
+
+#~ msgid "Testimonial user fisrt name"
+#~ msgstr "Prénom de la personne témoignant"
+
+#~ msgid "Last name"
+#~ msgstr "Nom"
+
+#~ msgid "Testimonial user last name"
+#~ msgstr "Nom de la personne témoignant"
+
+#~ msgid "Job"
+#~ msgstr "Métier"
+
+#~ msgid "Testimonial user job"
+#~ msgstr "Métier de la personne témoignant"
+
+#~ msgid "Company"
+#~ msgstr "Entreprise"
+
+#~ msgid "Testimonial user company"
+#~ msgstr "Entreprise de la personne témoignant"
+
+#~ msgid "Home testimonial excerpt"
+#~ msgstr "Extrait du témoignage visible sur la page d'accueil"
+
+#~ msgid "Iframe Page Options"
+#~ msgstr "Options de la page Iframe"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "Italic"
+#~ msgstr "Italic"
+
+#~ msgid "Bold"
+#~ msgstr "Gras"
+
+#~ msgid "Bold Italic"
+#~ msgstr "Gras italic"
+
+#~ msgid "Add New Project"
+#~ msgstr "Ajouter un Projet"
+
+#~ msgid "Events"
+#~ msgstr "Evénements"
+
+#~ msgid "My Events"
+#~ msgstr "Mes Evénements"
+
+#~ msgid "Event"
+#~ msgstr "Evénement"
+
+#~ msgid "Add New Event"
+#~ msgstr "Ajouter un nouvel événement"
+
+#~ msgid "Edit Event"
+#~ msgstr "Modifier l'événement"
+
+#~ msgid "View Event"
+#~ msgstr "Voir l'événement"
+
+#~ msgid "Search Event"
+#~ msgstr "Rechercher un événement"
+
+#~ msgid "No events found"
+#~ msgstr "Aucun événement trouvé"
+
+#~ msgid "No events found in trash"
+#~ msgstr "Aucun événement trouvé dans la poubelle"
+
+#~ msgid "Parent Event:"
+#~ msgstr "Evénement parent :"
+
+#~ msgid "Event category"
+#~ msgstr "Catégorie d'événement"
+
+#~ msgid "Event categories"
+#~ msgstr "Catégories d'événement"
+
+#~ msgid "Date begin "
+#~ msgstr "Date de début"
+
+#~ msgid "Date end "
+#~ msgstr "Date de fin"
+
+#~ msgid "Home page"
+#~ msgstr "Page d'accueil"
+
+#~ msgid "Category"
+#~ msgstr "Catégorie"
+
+#~ msgid "Page family"
+#~ msgstr "Famille de page"
+
+#~ msgid "Tags:"
+#~ msgstr "Mots clés :"
+
+#~ msgid "Posted on %1$s at %2$s"
+#~ msgstr "Posté le %1$s à %2$s"
+
+#~ msgid "At"
+#~ msgstr "Le"
+
+#~ msgid "View all news"
+#~ msgstr "Voir toute l'actualité"
+
+#~ msgid "Name"
+#~ msgstr "Nom"
+
+#~ msgid "First Name"
+#~ msgstr "Prénom"
+
+#~ msgid "Last Name"
+#~ msgstr "Nom"
+
+#~ msgid "Nickname"
+#~ msgstr "Surnom"
+
+#~ msgid "Website"
+#~ msgstr "Site internet"
+
+#~ msgid "About Yourself"
+#~ msgstr "A propos de vous"
+
+#~ msgid "About the user"
+#~ msgstr "A propos de l'utilisateur"
+
+#~ msgid "Edit Profile of User %s"
+#~ msgstr "Modifier le profil de l'utilisateur %s"
+
+#~ msgid "Reply To: %s"
+#~ msgstr "Répondre à : %s"
+
+#~ msgid "Reply:"
+#~ msgstr "Répondre :"
+
+#~ msgid "Submit"
+#~ msgstr "Envoyer"
+
+#~ msgid "Create an Account"
+#~ msgstr "Créer un compte"
+
+#~ msgid "Subscribe"
+#~ msgstr "S'abonner"
+
+#~ msgid "Unsubscribe"
+#~ msgstr "Se désabonner"
+
+#~ msgid "Delete"
+#~ msgstr "Supprimer"
+
+#~ msgid "On"
+#~ msgstr "Le"
+
+#~ msgid "Continue Reading <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "Voir la suite <span class=\"meta-nav\">&rarr;</span>"
+
+#~ msgid "Log out"
+#~ msgstr "Se déconnecter"
+
+#~ msgid "Admin"
+#~ msgstr "Administration"
+
+#~ msgid "Calendar"
+#~ msgstr "Agenda"
+
+#~ msgid "View all event dates"
+#~ msgstr "Voir tous les évènements"

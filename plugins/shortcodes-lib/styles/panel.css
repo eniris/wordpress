@@ -1,0 +1,12 @@
+* {margin:0;padding:0;}
+html, body {height: 100%;}
+.toolbar{padding: 10px;background-color: #efefef;height: 29px;border-bottom: 1px solid #ccc;}
+#content{min-height: 100px;overflow:auto;padding: 5px;}
+.footer {position: relative;height: 35px;border-top: 1px solid #ccc;padding: 5px 8px;}
+.shortcode_item_title{margin-bottom:0;padding: 3px;}
+.attr{padding: 3px;border-bottom: 1px dotted #E5E5E5;}
+.more_info{padding: 3px;}
+.shortcode_demo{margin:.5em 0;padding: 3px;background-color:#f5f5f5;border:1px solid #f0f0f0;}
+.label{display: inline-block;width: 120px;}
+select option{padding:0 5px;}
+select optgroup option{padding-left:16px;}
