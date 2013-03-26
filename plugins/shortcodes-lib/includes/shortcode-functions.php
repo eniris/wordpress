@@ -35,7 +35,6 @@ if( !function_exists('my_clear_floats_shortcode') ) {
 }
 
 
-
 /*
  * Spacing
  * @since v1.0
@@ -49,6 +48,45 @@ if( !function_exists('my_spacing_shortcode') ) {
 	 return '<hr class="my-spacing" style="height: '. $size .'"></hr>';
 	}
 	add_shortcode( 'my_spacing', 'my_spacing_shortcode' );
+}
+
+
+/*
+ * Divider
+ * @since v1.1
+ */
+if( !function_exists('my_divider_shortcode') ) {
+	function my_divider_shortcode( $atts ) {
+		extract( shortcode_atts( array(
+			'style' => 'solid',
+			'margin_top' => '20px',
+			'margin_bottom' => '20px',
+			'gotop' => '',
+			'cleardivider' => 'both',
+		  ),
+		  $atts ) );
+		
+		$output = '<hr class="my-divider '. $style .'" '.$style_attr.' style="';
+			if ( $margin_top ) {
+				$output .= 'margin-top:'. $margin_top .';';
+			}
+			if( $margin_bottom ) {
+				$output .= 'margin-bottom:'. $margin_bottom .';';
+			}
+			if( $cleardivider ) {
+				$output .= 'clear:'. $cleardivider .';';
+			}
+		$output .= '" />';
+		if ( $gotop == '1' ) {  
+			// load scripts
+			wp_enqueue_script('my_gotop');
+			$output .= '<a class="my-gotop" href="#my_gotop" title="' . __('Top page', 'shortcodes_lib') . '">' . __('Top', 'shortcodes_lib') . '</a>';
+		}
+		$output .= '';
+		
+		return $output;
+	}
+	add_shortcode( 'my_divider', 'my_divider_shortcode' );
 }
 
 
@@ -72,6 +110,7 @@ if( !function_exists('my_social_shortcode') ) {
 	}
 	add_shortcode('my_social', 'my_social_shortcode');
 }
+
 
 /**
 * Highlights
@@ -113,7 +152,6 @@ if( !function_exists('my_button_shortcode') ) {
 }
 
 
-
 /*
  * Boxes
  * @since v1.0
@@ -134,7 +172,6 @@ if( !function_exists('my_box_shortcode') ) {
 	}
 	add_shortcode('my_box', 'my_box_shortcode');
 }
-
 
 
 /*
@@ -158,7 +195,6 @@ if( !function_exists('my_testimonial_shortcode') ) {
 }
 
 
-
 /*
  * Columns
  * @since v1.0
@@ -174,7 +210,6 @@ if( !function_exists('my_column_shortcode') ) {
 	}
 	add_shortcode('my_column', 'my_column_shortcode');
 }
-
 
 
 /*
@@ -200,6 +235,7 @@ if( !function_exists('my_toggle_shortcode') ) {
  * @since v1.0
  *
  */
+
 
 // Main
 if( !function_exists('my_accordion_main_shortcode') ) {
@@ -275,14 +311,13 @@ if (!function_exists('my_tab_shortcode')) {
 }
 
 
-
-
 /*
  * Pricing Table
  * @since v1.0
  *
  */
- 
+
+
 /*main*/
 if( !function_exists('my_pricing_table_shortcode') ) {
 	function my_pricing_table_shortcode( $atts, $content = null  ) {
@@ -290,6 +325,7 @@ if( !function_exists('my_pricing_table_shortcode') ) {
 	}
 	add_shortcode( 'my_pricing_table', 'my_pricing_table_shortcode' );
 }
+
 
 /*section*/
 if( !function_exists('my_pricing_shortcode') ) {
@@ -335,14 +371,11 @@ if( !function_exists('my_pricing_shortcode') ) {
 }
 
 
-
-
 /************************
  *
  * Version 1.1 Additions
  *
 *************************/
-
 
 
 /*
@@ -353,7 +386,7 @@ if( !function_exists('my_heading_shortcode') ) {
 	function my_heading_shortcode( $atts ) {
 		extract( shortcode_atts( array(
 			'title' => 'Sample Heading',
-			'type' => 'h2',
+			'heading_type' => 'h2',
 			'margin_top' => '',
 			'margin_bottom' => '',
 			'text_align' => 'center'
@@ -370,7 +403,7 @@ if( !function_exists('my_heading_shortcode') ) {
 		} else {
 			$style_attr = NULL;
 		}
-	 	return '<'.$type.' class="my-heading text-align-'. $text_align .'" '.$style_attr.'><span>'. $title .'</span></'.$type.'>';
+	 	return '<'.$type.' class="my-heading text-align-'. $text_align .'" '.$style_attr.'><span>'. $title .'</span></'.$heading_type.'>';
 	}
 	add_shortcode( 'my_heading', 'my_heading_shortcode' );
 }
@@ -409,31 +442,3 @@ if (! function_exists( 'my_shortcode_googlemaps' ) ) :
 	}
 	add_shortcode("my_googlemap", "my_shortcode_googlemaps");
 endif;
-
-
-/*
- * Divider
- * @since v1.1
- */
-if( !function_exists('my_divider_shortcode') ) {
-	function my_divider_shortcode( $atts ) {
-		extract( shortcode_atts( array(
-			'style' => 'solid',
-			'margin_top' => '20px',
-			'margin_bottom' => '20px',
-		  ),
-		  $atts ) );
-		$style_attr = '';
-		if ( $margin_top && $margin_bottom ) {  
-			$style_attr = 'style="margin-top: '. $margin_top .';margin-bottom: '. $margin_bottom .';"';
-		} elseif( $margin_bottom ) {
-			$style_attr = 'style="margin-bottom: '. $margin_bottom .';"';
-		} elseif ( $margin_top ) {
-			$style_attr = 'style="margin-top: '. $margin_top .';"';
-		} else {
-			$style_attr = NULL;
-		}
-	 return '<hr class="my-divider '. $style .'" '.$style_attr.' />';
-	}
-	add_shortcode( 'my_divider', 'my_divider_shortcode' );
-}

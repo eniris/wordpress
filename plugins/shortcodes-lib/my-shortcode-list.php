@@ -17,12 +17,12 @@ require_once('../../../wp-admin/admin.php');
     </head>
     <body>
 		<div class="toolbar">
-            <?php _e('Shortcodes: ','shortcodes_lib'); ?>
-			<select id="my_selectedelement" onchange="shortcodeItem();">
-				<option selected="selected"><?php _e('-- choose --', 'shortcodes_lib') ?></option>
-				<option value='my_spacing'><?php _e('Spacing', 'shortcodes_lib') ?></option>
+            <?php _e('Select ','shortcodes_lib'); ?>
+			<select id="my_selectedelement" style="width:190px;" onchange="shortcodeItem();">
+				<option selected="selected"><?php _e('--Plugin shortcodes--', 'shortcodes_lib') ?></option>
 				<option value='my_clear_floats'><?php _e('Clear Floats', 'shortcodes_lib') ?></option>
 				<option value='my_divider'><?php _e('Divider', 'shortcodes_lib') ?></option>
+				<!--<option value='my_spacing'><?php _e('Spacing', 'shortcodes_lib') ?></option>-->
 				<option value='my_googlemap'><?php _e('Google Map', 'shortcodes_lib') ?></option>
 				<option value='my_heading'><?php _e('Heading', 'shortcodes_lib') ?></option>
 				<option value='my_highlight'><?php _e('Highlight', 'shortcodes_lib') ?></option>
@@ -36,6 +36,47 @@ require_once('../../../wp-admin/admin.php');
 				<option value='my_testimonial'><?php _e('Testimonial', 'shortcodes_lib') ?></option>
 				<option value='my_pricing_table'><?php _e('Pricing', 'shortcodes_lib') ?></option>
 			</select>
+			<?php _e('or','shortcodes_lib'); ?>
+			<?php
+			// Automatically create media_buttons for shortcode selection
+			// source :  http://wpsnipp.com/index.php/functions-php/update-automatically-create-media_buttons-for-shortcode-selection/
+			global $shortcode_tags;
+			 /* ------------------------------------- */
+			 /* enter names of shortcode to exclude bellow */
+			 /* ------------------------------------- */
+			$exclude = array(
+				"caption",
+				"wp_caption",
+				"gallery",
+				"embed",
+				"my_clear_floats",
+				"my_divider",
+				"my_spacing",
+				"my_googlemap",
+				"my_heading",
+				"my_highlight",
+				"my_tabgroup", "my_tab",
+				"my_toggle",
+				"my_accordion", "my_accordion_section",
+				"my_button",
+				"my_box",
+				"my_button",
+				"my_box",
+				"my_column",
+				"my_social",
+				"my_testimonial",
+				"my_pricing_table", "my_pricing",
+			);
+			
+			echo '<select id="my_select" style="width:190px;"><option value="">' . __('--Other shortcodes--','shortcodes_lib') . '</option>';
+			foreach ($shortcode_tags as $key => $val){
+				if(!in_array($key,$exclude)){
+					$shortcodes_list .= '<option value="['.$key.'][/'.$key.']">'.$key.'</option>';
+					}
+				}
+			 echo $shortcodes_list;
+			 echo '</select>';
+			?>
             <div class="fbutton" style="float:right;">
                 <a class="button" href="#insert_sc" onclick="sendMyCode();return false;">
                     <i class="icon-plus" style="margin-top:-1px;"></i><?php _e('Insert Shortcode','shortcodes_lib'); ?>
@@ -63,18 +104,18 @@ require_once('../../../wp-admin/admin.php');
 			</div><!-- //#my_clear_floats -->
 			
 			<div class="shortcode_item" id="my_divider">
-				<div class="shortcode_demo">[my_divider style="solid" margin_top="20px" margin_bottom="20px"]</div>
+				<div class="shortcode_demo">[my_divider style="solid" margin_top="20px" margin_bottom="20px" cleardivider="both" gotop="0"]</div>
 				<input type="hidden" id="shortcodetype" value="1">
 				<input type="hidden" id="shortcodecontent" value="">
 				<div class="attr">
 					<span class="label"><?php _e('Style', 'shortcodes_lib') ?></span>
 					<select id="style" class="attrVal">
-						<option value="solid">solid</option>
-						<option value="dashed">dashed</option>
-						<option value="dotted">dotted</option>
-						<option value="double">double</option>
-						<option value="fadeout">fadeout</option>
-						<option value="fadein">fadein</option>
+						<option value="solid"><?php _e('solid', 'shortcodes_lib') ?></option>
+						<option value="dashed"><?php _e('dashed', 'shortcodes_lib') ?></option>
+						<option value="dotted"><?php _e('dotted', 'shortcodes_lib') ?></option>
+						<option value="double"><?php _e('double', 'shortcodes_lib') ?></option>
+						<option value="fadeout"><?php _e('fadeout', 'shortcodes_lib') ?></option>
+						<option value="fadein"><?php _e('fadein', 'shortcodes_lib') ?></option>
 					</select>
 					<span class="description"><?php _e('', 'shortcodes_lib') ?></span>
 				</div>
@@ -87,6 +128,24 @@ require_once('../../../wp-admin/admin.php');
 					<span class="label"><?php _e('Margin bottom', 'shortcodes_lib') ?></span>
 					<input type="text" id="margin_bottom" class="attrVal" value="20px">
 					<span class="description"><?php _e('(in pixels)', 'shortcodes_lib') ?></span>
+				</div>
+				<div class="attr">
+					<span class="label"><?php _e('Top link', 'shortcodes_lib') ?></span>
+					<select id="gotop" class="attrVal">
+						<option value="0"><?php _e('no', 'shortcodes_lib') ?></option>
+						<option value="1"><?php _e('yes', 'shortcodes_lib') ?></option>
+					</select>
+					<span class="description"><?php _e('(Show Top page link)', 'shortcodes_lib') ?></span>
+				</div>
+				<div class="attr">
+					<span class="label"><?php _e('Clear Floats', 'shortcodes_lib') ?></span>
+					<select id="cleardivider" class="attrVal">
+						<option value="both"><?php _e('both', 'shortcodes_lib') ?></option>
+						<option value="left"><?php _e('left', 'shortcodes_lib') ?></option>
+						<option value="right"><?php _e('right', 'shortcodes_lib') ?></option>
+						<option value="none"><?php _e('none', 'shortcodes_lib') ?></option>
+					</select>
+					<span class="description"><?php _e('(reset previous floats)', 'shortcodes_lib') ?></span>
 				</div>
 			</div><!-- //#my_divider -->
 			
@@ -199,7 +258,7 @@ require_once('../../../wp-admin/admin.php');
 			</div><!-- //#my_accordion -->
 			
 			<div class="shortcode_item" id="my_button">
-				<div class="shortcode_demo">[my_button color="blue" url="http://www.google.com" title="<?php _e('Visit Site', 'shortcodes_lib') ?>" target="_blank" border_radius="4px"]<?php _e('Button Text', 'shortcodes_lib') ?>[/my_button]</div>
+				<div class="shortcode_demo">[my_button color="blue" url="http://www.google.com" title="<?php _e('Visit Site', 'shortcodes_lib') ?>" target="_blank" border_radius=""]<?php _e('Button Text', 'shortcodes_lib') ?>[/my_button]</div>
 				<input type="hidden" id="shortcodetype" value="2">
 				<input type="hidden" id="shortcodecontent" value='<?php _e('Button Text', 'shortcodes_lib') ?>'>
 				<div class="attr">
@@ -242,7 +301,7 @@ require_once('../../../wp-admin/admin.php');
 				</div>
 				<div class="attr">
 					<span class="label"><?php _e('Border radius', 'shortcodes_lib') ?></span>
-					<input type="text" id="border_radius" class="attrVal" value="4px">
+					<input type="text" id="border_radius" class="attrVal" value="">
 					<span class="description"><?php _e('pixels (with unit)', 'shortcodes_lib') ?></span>
 				</div>
 				<div class="more_info"><?php _e('','shortcodes_lib'); ?></div>
@@ -373,9 +432,9 @@ require_once('../../../wp-admin/admin.php');
 			</div><!-- //#my_testimonial -->
 			
 			<div class="shortcode_item" id="my_pricing_table">
-				<div class="shortcode_demo">[my_pricing_table]<br />[my_pricing size="one-half" plan="<?php _e('Basic', 'shortcodes_lib') ?>" cost="<?php _e('$19.99', 'shortcodes_lib') ?>" per="<?php _e('per month', 'shortcodes_lib') ?>" button_url="#" button_text="<?php _e('Sign Up', 'shortcodes_lib') ?>" button_color="gold" button_border_radius="4px" button_target="_self" button_rel="nofollow" position=""]<br /><ul><li><?php _e('30GB Storage', 'shortcodes_lib') ?></li><li><?php _e('512MB Ram', 'shortcodes_lib') ?></li><li><?php _e('10 databases', 'shortcodes_lib') ?></li><li><?php _e('1,000 Emails', 'shortcodes_lib') ?></li><li><?php _e('25GB Bandwidth', 'shortcodes_lib') ?></li></ul>[/my_pricing]<br />[/my_pricing_table]</div>
+				<div class="shortcode_demo">[my_pricing_table]<br />[my_pricing size="one-half" plan="<?php _e('Basic', 'shortcodes_lib') ?>" cost="<?php _e('$19.99', 'shortcodes_lib') ?>" per="<?php _e('per month', 'shortcodes_lib') ?>" button_url="#" button_text="<?php _e('Sign Up', 'shortcodes_lib') ?>" button_color="gold" button_border_radius="" button_target="_self" button_rel="nofollow" position=""]<br /><ul><li><?php _e('30GB Storage', 'shortcodes_lib') ?></li><li><?php _e('512MB Ram', 'shortcodes_lib') ?></li><li><?php _e('10 databases', 'shortcodes_lib') ?></li><li><?php _e('1,000 Emails', 'shortcodes_lib') ?></li><li><?php _e('25GB Bandwidth', 'shortcodes_lib') ?></li></ul>[/my_pricing]<br />[/my_pricing_table]</div>
 				<input type="hidden" id="shortcodetype" value="2">
-				<input type="hidden" id="shortcodecontent" value='<br />[my_pricing size="one-half" plan="<?php _e('Basic', 'shortcodes_lib') ?>" cost="<?php _e('$19.99', 'shortcodes_lib') ?>" per="<?php _e('per month', 'shortcodes_lib') ?>" button_url="#" button_text="<?php _e('Sign Up', 'shortcodes_lib') ?>" button_color="gold" button_border_radius="4px" button_target="_self" button_rel="nofollow" position=""]<br /><ul><li><?php _e('30GB Storage', 'shortcodes_lib') ?></li><li><?php _e('512MB Ram', 'shortcodes_lib') ?></li><li><?php _e('10 databases', 'shortcodes_lib') ?></li><li><?php _e('1,000 Emails', 'shortcodes_lib') ?></li><li><?php _e('25GB Bandwidth', 'shortcodes_lib') ?></li></ul>[/my_pricing]<br />'>
+				<input type="hidden" id="shortcodecontent" value='<br />[my_pricing size="one-half" plan="<?php _e('Basic', 'shortcodes_lib') ?>" cost="<?php _e('$19.99', 'shortcodes_lib') ?>" per="<?php _e('per month', 'shortcodes_lib') ?>" button_url="#" button_text="<?php _e('Sign Up', 'shortcodes_lib') ?>" button_color="gold" button_border_radius="" button_target="_self" button_rel="nofollow" position=""]<br /><ul><li><?php _e('30GB Storage', 'shortcodes_lib') ?></li><li><?php _e('512MB Ram', 'shortcodes_lib') ?></li><li><?php _e('10 databases', 'shortcodes_lib') ?></li><li><?php _e('1,000 Emails', 'shortcodes_lib') ?></li><li><?php _e('25GB Bandwidth', 'shortcodes_lib') ?></li></ul>[/my_pricing]<br />'>
 				<div class="more_info"><?php _e('No more informations or attributes...','shortcodes_lib'); ?></div>
 			</div><!-- //#my_pricing_table -->
 			
@@ -430,7 +489,7 @@ require_once('../../../wp-admin/admin.php');
                         if( jQuery('#'+my_selectedItem+' #shortcodecontent').val() ){
 							ctype += jQuery('#'+my_selectedItem+' #shortcodecontent').val();
 						}else{
-							ctype += 'the content';
+							ctype += '<?php _e('content', 'shortcodes_lib') ?>';
 						}
                         ctype += ' [/'+shortcode+']';
                     }
@@ -441,6 +500,16 @@ require_once('../../../wp-admin/admin.php');
                     win.send_to_editor(output+']'+ctype);
                 }
             }
-        </script>
+			
+			/* */
+			jQuery(document).ready(function(){
+				jQuery("#my_select").change(function() {
+                    var win = window.dialogArguments || opener || parent || top;
+					win.send_to_editor(jQuery("#my_select :selected").val());
+					return false;
+				});
+			});
+			/* */
+		</script>
     </body>
 </html>

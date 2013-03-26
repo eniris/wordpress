@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Shortcodes Lib\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-06 16:55+0100\n"
-"PO-Revision-Date: 2013-03-06 17:14+0100\n"
-"Last-Translator: SIMALIS <information@simalis.net>\n"
+"POT-Creation-Date: 2013-03-26 14:20+0100\n"
+"PO-Revision-Date: 2013-03-26 14:21+0100\n"
+"Last-Translator: Benoit Sparza <bsparza@business-geografic.net>\n"
 "Language-Team: Business Geografic <information@simalis.net>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
@@ -18,24 +18,24 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../my-shortcode-list.php:20
-msgid "Shortcodes: "
-msgstr "Shortcodes : "
+msgid "Select "
+msgstr "S&eacute;lectionner"
 
 #: ../my-shortcode-list.php:22
-msgid "-- choose --"
-msgstr "-- choisir --"
+msgid "--Plugin shortcodes--"
+msgstr "--Shortcodes du plugin--"
 
-#: ../my-shortcode-list.php:23
-msgid "Spacing"
-msgstr "Espacement"
+#: ../my-shortcode-list.php:23 ../my-shortcode-list.php:141
+msgid "Clear Floats"
+msgstr "Nettoyage d'alignements"
 
 #: ../my-shortcode-list.php:24
-msgid "Clear Floats"
-msgstr "Nettoyage de \"float\""
-
-#: ../my-shortcode-list.php:25
 msgid "Divider"
 msgstr "S&eacute;parateur"
+
+#: ../my-shortcode-list.php:25
+msgid "Spacing"
+msgstr "Espacement"
 
 #: ../my-shortcode-list.php:26
 msgid "Google Map"
@@ -85,375 +85,462 @@ msgstr "T&eacute;moignage"
 msgid "Pricing"
 msgstr "Prix"
 
-#: ../my-shortcode-list.php:41
+#: ../my-shortcode-list.php:39
+msgid "or"
+msgstr "ou"
+
+#: ../my-shortcode-list.php:71
+msgid "--Other shortcodes--"
+msgstr "--Autres shortcodes--"
+
+#: ../my-shortcode-list.php:82
 msgid "Insert Shortcode"
 msgstr "Ins&eacute;rer le shortcode"
 
-#: ../my-shortcode-list.php:52 ../my-shortcode-list.php:297
+#: ../my-shortcode-list.php:93 ../my-shortcode-list.php:356
 msgid "Size"
 msgstr "Taille"
 
-#: ../my-shortcode-list.php:54
+#: ../my-shortcode-list.php:95
 msgid "Height space (in pixels)"
 msgstr "hauteur d espace (en pixels)"
 
-#: ../my-shortcode-list.php:62 ../my-shortcode-list.php:179
-#: ../my-shortcode-list.php:198 ../my-shortcode-list.php:379
+#: ../my-shortcode-list.php:103 ../my-shortcode-list.php:238
+#: ../my-shortcode-list.php:257 ../my-shortcode-list.php:438
 msgid "No more informations or attributes..."
 msgstr "Acune information ou attribut..."
 
-#: ../my-shortcode-list.php:70
+#: ../my-shortcode-list.php:111
 msgid "Style"
 msgstr "Style"
 
-#: ../my-shortcode-list.php:82 ../my-shortcode-list.php:136
+#: ../my-shortcode-list.php:113
+msgid "solid"
+msgstr "ligne pleine"
+
+#: ../my-shortcode-list.php:114
+msgid "dashed"
+msgstr "tirets"
+
+#: ../my-shortcode-list.php:115
+msgid "dotted"
+msgstr "pointill&eacute;s"
+
+#: ../my-shortcode-list.php:116
+msgid "double"
+msgstr "ligne double"
+
+#: ../my-shortcode-list.php:117
+msgid "fadeout"
+msgstr ""
+
+#: ../my-shortcode-list.php:118
+msgid "fadein"
+msgstr ""
+
+#: ../my-shortcode-list.php:123 ../my-shortcode-list.php:195
 msgid "Margin top"
 msgstr "Marge haute"
 
-#: ../my-shortcode-list.php:84 ../my-shortcode-list.php:89
+#: ../my-shortcode-list.php:125 ../my-shortcode-list.php:130
 msgid "(in pixels)"
 msgstr "(en pixels)"
 
-#: ../my-shortcode-list.php:87 ../my-shortcode-list.php:141
+#: ../my-shortcode-list.php:128 ../my-shortcode-list.php:200
 msgid "Margin bottom"
 msgstr "Marge basse"
 
-#: ../my-shortcode-list.php:94 ../my-shortcode-list.php:99
-msgid "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"
-msgstr ""
+#: ../my-shortcode-list.php:133
+msgid "Top link"
+msgstr "Lien haut de page"
 
-#: ../my-shortcode-list.php:98 ../my-shortcode-list.php:131
-#: ../my-shortcode-list.php:187 ../my-shortcode-list.php:229
-#: ../my-shortcode-list.php:341
-msgid "Title"
-msgstr "Titre"
+#: ../my-shortcode-list.php:135
+msgid "no"
+msgstr "non"
 
-#: ../my-shortcode-list.php:103
-msgid "Zoom"
-msgstr "Zoom"
+#: ../my-shortcode-list.php:136
+msgid "yes"
+msgstr "oui"
 
-#: ../my-shortcode-list.php:108
-msgid "Height"
-msgstr "Hauteur"
+#: ../my-shortcode-list.php:138
+msgid "(Show Top page link)"
+msgstr "(voir le lien \"haut de page\")"
 
-#: ../my-shortcode-list.php:115 ../my-shortcode-list.php:132
-msgid "This is my title"
-msgstr "Ceci est mon titre"
+#: ../my-shortcode-list.php:143
+msgid "both"
+msgstr "tous les 2"
 
-#: ../my-shortcode-list.php:119
-msgid "Type"
-msgstr "Type"
-
-#: ../my-shortcode-list.php:146 ../my-shortcode-list.php:267
-msgid "Text align"
-msgstr "Alignement du texte"
-
-#: ../my-shortcode-list.php:148 ../my-shortcode-list.php:269
-#: ../my-shortcode-list.php:284
+#: ../my-shortcode-list.php:144 ../my-shortcode-list.php:207
+#: ../my-shortcode-list.php:328 ../my-shortcode-list.php:343
 msgid "left"
 msgstr "gauche"
 
-#: ../my-shortcode-list.php:149 ../my-shortcode-list.php:270
-#: ../my-shortcode-list.php:285
+#: ../my-shortcode-list.php:145 ../my-shortcode-list.php:208
+#: ../my-shortcode-list.php:329 ../my-shortcode-list.php:344
 msgid "right"
 msgstr "droite"
 
-#: ../my-shortcode-list.php:150 ../my-shortcode-list.php:271
+#: ../my-shortcode-list.php:146 ../my-shortcode-list.php:342
+msgid "none"
+msgstr "aucun"
+
+#: ../my-shortcode-list.php:148
+msgid "(reset previous floats)"
+msgstr "(r&eacute;initialiser les alignements pr&eacute;c&eacute;dents)"
+
+#: ../my-shortcode-list.php:153 ../my-shortcode-list.php:158
+msgid "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"
+msgstr ""
+
+#: ../my-shortcode-list.php:157 ../my-shortcode-list.php:190
+#: ../my-shortcode-list.php:246 ../my-shortcode-list.php:288
+#: ../my-shortcode-list.php:400
+msgid "Title"
+msgstr "Titre"
+
+#: ../my-shortcode-list.php:162
+msgid "Zoom"
+msgstr "Zoom"
+
+#: ../my-shortcode-list.php:167
+msgid "Height"
+msgstr "Hauteur"
+
+#: ../my-shortcode-list.php:174 ../my-shortcode-list.php:191
+msgid "This is my title"
+msgstr "Ceci est mon titre"
+
+#: ../my-shortcode-list.php:178
+msgid "Type"
+msgstr "Type"
+
+#: ../my-shortcode-list.php:205 ../my-shortcode-list.php:326
+msgid "Text align"
+msgstr "Alignement du texte"
+
+#: ../my-shortcode-list.php:209 ../my-shortcode-list.php:330
 msgid "center"
 msgstr "centre"
 
-#: ../my-shortcode-list.php:158 ../my-shortcode-list.php:160
+#: ../my-shortcode-list.php:217 ../my-shortcode-list.php:219
 msgid "highlighted text"
 msgstr "Texte sur-lign&eacute;"
 
-#: ../my-shortcode-list.php:162 ../my-shortcode-list.php:206
-#: ../my-shortcode-list.php:256
+#: ../my-shortcode-list.php:221 ../my-shortcode-list.php:265
+#: ../my-shortcode-list.php:315
 msgid "Color"
 msgstr "Couleur"
 
-#: ../my-shortcode-list.php:164 ../my-shortcode-list.php:260
+#: ../my-shortcode-list.php:223 ../my-shortcode-list.php:319
 msgid "yellow"
 msgstr "jaune"
 
-#: ../my-shortcode-list.php:165 ../my-shortcode-list.php:212
-#: ../my-shortcode-list.php:261
+#: ../my-shortcode-list.php:224 ../my-shortcode-list.php:271
+#: ../my-shortcode-list.php:320
 msgid "blue"
 msgstr "blue"
 
-#: ../my-shortcode-list.php:166 ../my-shortcode-list.php:208
-#: ../my-shortcode-list.php:259
+#: ../my-shortcode-list.php:225 ../my-shortcode-list.php:267
+#: ../my-shortcode-list.php:318
 msgid "green"
 msgstr "vert"
 
-#: ../my-shortcode-list.php:167 ../my-shortcode-list.php:210
-#: ../my-shortcode-list.php:262
+#: ../my-shortcode-list.php:226 ../my-shortcode-list.php:269
+#: ../my-shortcode-list.php:321
 msgid "red"
 msgstr "rouge"
 
-#: ../my-shortcode-list.php:168 ../my-shortcode-list.php:258
+#: ../my-shortcode-list.php:227 ../my-shortcode-list.php:317
 msgid "gray"
 msgstr "gris"
 
-#: ../my-shortcode-list.php:170
+#: ../my-shortcode-list.php:229
 msgid "background color highlight"
 msgstr "couleur d arri&egrave;re plan du surlignage"
 
-#: ../my-shortcode-list.php:176 ../my-shortcode-list.php:178
+#: ../my-shortcode-list.php:235 ../my-shortcode-list.php:237
 msgid "First Tab title"
 msgstr "Titre du premier onglet"
 
-#: ../my-shortcode-list.php:176 ../my-shortcode-list.php:178
+#: ../my-shortcode-list.php:235 ../my-shortcode-list.php:237
 msgid "First tab content"
 msgstr "Contenu du premier onglet"
 
-#: ../my-shortcode-list.php:176 ../my-shortcode-list.php:178
+#: ../my-shortcode-list.php:235 ../my-shortcode-list.php:237
 msgid "Second Tab title"
 msgstr "Titre du second onglet"
 
-#: ../my-shortcode-list.php:176 ../my-shortcode-list.php:178
+#: ../my-shortcode-list.php:235 ../my-shortcode-list.php:237
 msgid "Second Tab Content."
 msgstr "Contenu du second onglet"
 
-#: ../my-shortcode-list.php:183 ../my-shortcode-list.php:188
+#: ../my-shortcode-list.php:242 ../my-shortcode-list.php:247
 msgid "This Is Your Toggle Title"
 msgstr ""
 
-#: ../my-shortcode-list.php:183 ../my-shortcode-list.php:185
+#: ../my-shortcode-list.php:242 ../my-shortcode-list.php:244
 msgid "Your Toggle Content"
 msgstr ""
 
-#: ../my-shortcode-list.php:195 ../my-shortcode-list.php:197
+#: ../my-shortcode-list.php:254 ../my-shortcode-list.php:256
 msgid "Section 1"
 msgstr ""
 
-#: ../my-shortcode-list.php:195 ../my-shortcode-list.php:197
+#: ../my-shortcode-list.php:254 ../my-shortcode-list.php:256
 msgid "Accordion Content"
 msgstr "Contenu de l accord&eacute;on"
 
-#: ../my-shortcode-list.php:195 ../my-shortcode-list.php:197
+#: ../my-shortcode-list.php:254 ../my-shortcode-list.php:256
 msgid "Section 2"
 msgstr ""
 
-#: ../my-shortcode-list.php:202 ../my-shortcode-list.php:230
+#: ../my-shortcode-list.php:261 ../my-shortcode-list.php:289
 msgid "Visit Site"
 msgstr "Visiter le site"
 
-#: ../my-shortcode-list.php:202 ../my-shortcode-list.php:204
+#: ../my-shortcode-list.php:261 ../my-shortcode-list.php:263
 msgid "Button Text"
 msgstr "Texte du bouton"
 
-#: ../my-shortcode-list.php:209
+#: ../my-shortcode-list.php:268
 msgid "black"
-msgstr ""
+msgstr "noir"
 
-#: ../my-shortcode-list.php:211
+#: ../my-shortcode-list.php:270
 msgid "orange"
-msgstr ""
+msgstr "orange"
 
-#: ../my-shortcode-list.php:213
+#: ../my-shortcode-list.php:272
 msgid "rosy"
-msgstr ""
+msgstr "rosé"
 
-#: ../my-shortcode-list.php:214
+#: ../my-shortcode-list.php:273
 msgid "pink"
-msgstr ""
+msgstr "rose"
 
-#: ../my-shortcode-list.php:215
+#: ../my-shortcode-list.php:274
 msgid "brown"
-msgstr ""
+msgstr "marron"
 
-#: ../my-shortcode-list.php:216
+#: ../my-shortcode-list.php:275
 msgid "purple"
-msgstr ""
+msgstr "violet"
 
-#: ../my-shortcode-list.php:217
+#: ../my-shortcode-list.php:276
 msgid "gold"
-msgstr ""
+msgstr "or"
 
-#: ../my-shortcode-list.php:218
+#: ../my-shortcode-list.php:277
 msgid "teal"
-msgstr ""
+msgstr "vert d'eau"
 
-#: ../my-shortcode-list.php:219
+#: ../my-shortcode-list.php:278
 msgid "navy"
-msgstr ""
+msgstr "bleu"
 
-#: ../my-shortcode-list.php:224 ../my-shortcode-list.php:336
+#: ../my-shortcode-list.php:283 ../my-shortcode-list.php:395
 msgid "URL"
 msgstr ""
 
-#: ../my-shortcode-list.php:226 ../my-shortcode-list.php:338
+#: ../my-shortcode-list.php:285 ../my-shortcode-list.php:397
 msgid "with http://..."
 msgstr "avec http://..."
 
-#: ../my-shortcode-list.php:234 ../my-shortcode-list.php:346
+#: ../my-shortcode-list.php:293 ../my-shortcode-list.php:405
 msgid "Target"
 msgstr "Cible"
 
-#: ../my-shortcode-list.php:236 ../my-shortcode-list.php:348
-msgid "blank"
+#: ../my-shortcode-list.php:295
+msgid "_blank"
 msgstr ""
 
-#: ../my-shortcode-list.php:237 ../my-shortcode-list.php:314
-#: ../my-shortcode-list.php:349
-msgid "self"
+#: ../my-shortcode-list.php:296 ../my-shortcode-list.php:408
+msgid "_self"
 msgstr ""
 
-#: ../my-shortcode-list.php:238 ../my-shortcode-list.php:350
-msgid "parent"
+#: ../my-shortcode-list.php:297 ../my-shortcode-list.php:409
+msgid "_parent"
 msgstr ""
 
-#: ../my-shortcode-list.php:239 ../my-shortcode-list.php:351
-msgid "top"
-msgstr "haut"
+#: ../my-shortcode-list.php:298 ../my-shortcode-list.php:410
+msgid "_top"
+msgstr ""
 
-#: ../my-shortcode-list.php:244
+#: ../my-shortcode-list.php:303
 msgid "Border radius"
 msgstr "Arrondis"
 
-#: ../my-shortcode-list.php:246
+#: ../my-shortcode-list.php:305
 msgid "pixels (with unit)"
 msgstr "pixels (avec unit&eacute;)"
 
-#: ../my-shortcode-list.php:252 ../my-shortcode-list.php:254
+#: ../my-shortcode-list.php:311 ../my-shortcode-list.php:313
 msgid "Box gray Content"
 msgstr "Contenu de la boite grise"
 
-#: ../my-shortcode-list.php:276
+#: ../my-shortcode-list.php:335
 msgid "Width"
 msgstr "Largeur"
 
-#: ../my-shortcode-list.php:278
+#: ../my-shortcode-list.php:337
 msgid "pixels or percent"
 msgstr "pixels ou pourcent"
 
-#: ../my-shortcode-list.php:281
+#: ../my-shortcode-list.php:340
 msgid "Float"
 msgstr ""
 
-#: ../my-shortcode-list.php:283
-msgid "none"
-msgstr ""
-
-#: ../my-shortcode-list.php:293
+#: ../my-shortcode-list.php:352
 msgid "Content"
 msgstr "Contenu"
 
-#: ../my-shortcode-list.php:299
+#: ../my-shortcode-list.php:358
 msgid "one-half"
 msgstr "1/2 (un demi)"
 
-#: ../my-shortcode-list.php:300
+#: ../my-shortcode-list.php:359
 msgid "one-third"
 msgstr "1/3 (un tier)"
 
-#: ../my-shortcode-list.php:301
+#: ../my-shortcode-list.php:360
 msgid "two-third"
 msgstr "2/3 (deux tiers)"
 
-#: ../my-shortcode-list.php:302
+#: ../my-shortcode-list.php:361
 msgid "one-fourth"
 msgstr "1/4 (un quart)"
 
-#: ../my-shortcode-list.php:303
+#: ../my-shortcode-list.php:362
 msgid "three-fourth"
 msgstr "3/4 (trois  quart)"
 
-#: ../my-shortcode-list.php:304
+#: ../my-shortcode-list.php:363
 msgid "one-fift"
 msgstr "1/5 (un cinqui&egrave;me)"
 
-#: ../my-shortcode-list.php:305
+#: ../my-shortcode-list.php:364
 msgid "two-fift"
 msgstr "2/5 (deux  cinqui&egrave;me)"
 
-#: ../my-shortcode-list.php:306
+#: ../my-shortcode-list.php:365
 msgid "one-sixth"
 msgstr "1/6 (un sixi&egrave;me)"
 
-#: ../my-shortcode-list.php:307
+#: ../my-shortcode-list.php:366
 msgid "five-sixth"
 msgstr "5/6 (cinq  sixi&egrave;me)"
 
-#: ../my-shortcode-list.php:312
+#: ../my-shortcode-list.php:371
 msgid "Position"
 msgstr "Position"
 
-#: ../my-shortcode-list.php:315
+#: ../my-shortcode-list.php:373
+msgid "self"
+msgstr ""
+
+#: ../my-shortcode-list.php:374
 msgid "first"
 msgstr "premi&egrave;re"
 
-#: ../my-shortcode-list.php:316
+#: ../my-shortcode-list.php:375
 msgid "last"
 msgstr "derni&egrave;re"
 
-#: ../my-shortcode-list.php:324 ../my-shortcode-list.php:342
+#: ../my-shortcode-list.php:383 ../my-shortcode-list.php:401
 msgid "Follow Us"
 msgstr "Suivez nous"
 
-#: ../my-shortcode-list.php:328
+#: ../my-shortcode-list.php:387
 msgid "Icon"
 msgstr "Icone"
 
-#: ../my-shortcode-list.php:330
+#: ../my-shortcode-list.php:389
 msgid "twitter"
 msgstr ""
 
-#: ../my-shortcode-list.php:331
+#: ../my-shortcode-list.php:390
 msgid "facebook"
 msgstr ""
 
-#: ../my-shortcode-list.php:356
+#: ../my-shortcode-list.php:407
+msgid "_"
+msgstr ""
+
+#: ../my-shortcode-list.php:415
 msgid "rel"
 msgstr "rel"
 
-#: ../my-shortcode-list.php:364 ../my-shortcode-list.php:366
+#: ../my-shortcode-list.php:423 ../my-shortcode-list.php:425
 msgid "Your testimonial"
 msgstr "Votre t&eacute;moignage"
 
-#: ../my-shortcode-list.php:368
+#: ../my-shortcode-list.php:427
 msgid "Author"
 msgstr "Auteur"
 
-#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+#: ../my-shortcode-list.php:435 ../my-shortcode-list.php:437
 msgid "Basic"
 msgstr ""
 
-#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+#: ../my-shortcode-list.php:435 ../my-shortcode-list.php:437
 msgid "$19.99"
 msgstr ""
 
-#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+#: ../my-shortcode-list.php:435 ../my-shortcode-list.php:437
 msgid "per month"
 msgstr "par mois"
 
-#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+#: ../my-shortcode-list.php:435 ../my-shortcode-list.php:437
 msgid "Sign Up"
 msgstr "S inscrire"
 
-#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+#: ../my-shortcode-list.php:435 ../my-shortcode-list.php:437
 msgid "30GB Storage"
 msgstr ""
 
-#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+#: ../my-shortcode-list.php:435 ../my-shortcode-list.php:437
 msgid "512MB Ram"
 msgstr ""
 
-#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+#: ../my-shortcode-list.php:435 ../my-shortcode-list.php:437
 msgid "10 databases"
 msgstr ""
 
-#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+#: ../my-shortcode-list.php:435 ../my-shortcode-list.php:437
 msgid "1,000 Emails"
 msgstr ""
 
-#: ../my-shortcode-list.php:376 ../my-shortcode-list.php:378
+#: ../my-shortcode-list.php:435 ../my-shortcode-list.php:437
 msgid "25GB Bandwidth"
 msgstr ""
 
-#: ../includes/shortcode-editor-select.php:13
+#: ../my-shortcode-list.php:492
+msgid "content"
+msgstr "contenu"
+
+#: ../includes/shortcode-editor-select.php:14
 msgid "Shortcodes library"
 msgstr "Librairie de shortcodes"
+
+#: ../includes/shortcode-functions.php:83
+msgid "Top page"
+msgstr "Haut de page"
+
+#: ../includes/shortcode-functions.php:83
+msgid "Top"
+msgstr "Haut"
+
+#~ msgid "(Top link label)"
+#~ msgstr "(Libell&eacute; du lien)"
+
+#~ msgid "Shortcodes: "
+#~ msgstr "Shortcodes : "
+
+#~ msgid "-- choose --"
+#~ msgstr "-- choisir --"
+
+#~ msgid "top"
+#~ msgstr "haut"
 
 #~ msgid "This event has expired."
 #~ msgstr "Cet événement a expiré."
@@ -488,9 +575,6 @@ msgstr "Librairie de shortcodes"
 #~ msgid "Edit"
 #~ msgstr "Modifier"
 
-#~ msgid "Top"
-#~ msgstr "Haut"
-
 #~ msgid "Author Archives: %s"
 #~ msgstr "Archives de l'auteur %s"
 
@@ -505,9 +589,6 @@ msgstr "Librairie de shortcodes"
 
 #~ msgid "Three"
 #~ msgstr "Trois"
-
-#~ msgid "Four"
-#~ msgstr "Quatre"
 
 #~ msgid "Five"
 #~ msgstr "Cinq"
@@ -721,9 +802,6 @@ msgstr "Librairie de shortcodes"
 #~ msgid "<span class=\"%1$s\">Posted on</span> %2$s"
 #~ msgstr "<span class=\"%1$s\">Posté le</span> %2$s"
 
-#~ msgid "Choose shortcode:"
-#~ msgstr "Choisir le shrotcode :"
-
 #~ msgid "Main Navigation"
 #~ msgstr "Menu principal"
 
@@ -855,9 +933,6 @@ msgstr "Librairie de shortcodes"
 
 #~ msgid "Date end "
 #~ msgstr "Date de fin"
-
-#~ msgid "Home page"
-#~ msgstr "Page d'accueil"
 
 #~ msgid "Category"
 #~ msgstr "Catégorie"

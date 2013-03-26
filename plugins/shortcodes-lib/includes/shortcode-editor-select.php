@@ -3,6 +3,7 @@
  * This file has all the main shortcode functions
  * @package Shortcodes library Plugin
  */
+ 
 
 // Add shortcode selection box
 add_action('media_buttons','my_select',11);
@@ -235,6 +236,7 @@ function my_select(){
 		*/
 	echo $html;
 }
+
 add_action('admin_head', 'my_button_js');
 function my_button_js() {
 	echo '<script type="text/javascript">

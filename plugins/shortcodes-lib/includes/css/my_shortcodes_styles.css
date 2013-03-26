@@ -1074,3 +1074,4 @@
 	background-image: -ms-radial-gradient(50% 50%, #ffffff, #eeeeee);
 	background-image: radial-gradient(50% 50%, #ffffff, #eeeeee);
 }
+.my-gotop{display:block;float:right;margin-top:-16px;font-size:.9em;color:#666;text-decoration:none;}

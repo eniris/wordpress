@@ -14,6 +14,8 @@ if( !function_exists ('my_shortcodes_scripts') ) :
 		// added v1.1
 		wp_register_script('my_googlemap',  plugin_dir_url( __FILE__ ) . 'js/my_googlemap.js', array('jquery'), '', true);
 		wp_register_script('my_googlemap_api', 'https://maps.googleapis.com/maps/api/js?sensor=false', array('jquery'), '', true);
+        
+		wp_register_script('my_gotop',  plugin_dir_url( __FILE__ ) . 'js/my_gotop.js', array('jquery'), '', true);
 	}
 	add_action('wp_enqueue_scripts', 'my_shortcodes_scripts');
 endif;
