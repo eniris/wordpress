@@ -22,7 +22,7 @@ require_once('../../../wp-admin/admin.php');
 				<option selected="selected"><?php _e('--Plugin shortcodes--', 'shortcodes_lib') ?></option>
 				<option value='my_clear_floats'><?php _e('Clear Floats', 'shortcodes_lib') ?></option>
 				<option value='my_divider'><?php _e('Divider', 'shortcodes_lib') ?></option>
-				<!--<option value='my_spacing'><?php _e('Spacing', 'shortcodes_lib') ?></option>-->
+				<option value='my_spacing'><?php _e('Spacing', 'shortcodes_lib') ?></option>
 				<option value='my_googlemap'><?php _e('Google Map', 'shortcodes_lib') ?></option>
 				<option value='my_heading'><?php _e('Heading', 'shortcodes_lib') ?></option>
 				<option value='my_highlight'><?php _e('Highlight', 'shortcodes_lib') ?></option>
@@ -31,6 +31,7 @@ require_once('../../../wp-admin/admin.php');
 				<option value='my_accordion'><?php _e('Accordion', 'shortcodes_lib') ?></option>
 				<option value='my_button'><?php _e('Button', 'shortcodes_lib') ?></option>
 				<option value='my_box'><?php _e('Box', 'shortcodes_lib') ?></option>
+				<option value='my_iframe'><?php _e('Iframe', 'shortcodes_lib') ?></option>
 				<option value='my_column'><?php _e('Column', 'shortcodes_lib') ?></option>
 				<option value='my_social'><?php _e('Social', 'shortcodes_lib') ?></option>
 				<option value='my_testimonial'><?php _e('Testimonial', 'shortcodes_lib') ?></option>
@@ -59,10 +60,9 @@ require_once('../../../wp-admin/admin.php');
 				"my_toggle",
 				"my_accordion", "my_accordion_section",
 				"my_button",
-				"my_box",
-				"my_button",
-				"my_box",
 				"my_column",
+				"my_box",
+				"my_iframe",
 				"my_social",
 				"my_testimonial",
 				"my_pricing_table", "my_pricing",
@@ -347,6 +347,46 @@ require_once('../../../wp-admin/admin.php');
 				</div>
 				<div class="more_info"><?php _e('','shortcodes_lib'); ?></div>
 			</div><!-- //#my_box -->
+			
+			<div class="shortcode_item" id="my_iframe">
+				<div class="shortcode_demo">
+				[my_iframe width="50%" height="100%" frameborder="0" scrolling="auto" class=""]http://www.google.fr/[/my_iframe]</div>
+				<input type="hidden" id="shortcodetype" value="2">
+				<input type="hidden" id="shortcodecontent" value="http://www.google.fr/">
+				<div class="attr">
+					<span class="label"><?php _e('Width', 'shortcodes_lib') ?></span>
+					<input type="text" id="iframe_width" class="attrVal" value="100%">
+					<span class="description"><?php _e('pixels or percent', 'shortcodes_lib') ?></span>
+				</div>
+				<div class="attr">
+					<span class="label"><?php _e('Height', 'shortcodes_lib') ?></span>
+					<input type="text" id="iframe_height" class="attrVal" value="480">
+					<span class="description"><?php _e('pixels or 100% for auto resize height', 'shortcodes_lib') ?></span>
+				</div>
+				<div class="attr">
+					<span class="label"><?php _e('Frame border', 'shortcodes_lib') ?></span>
+					<select id="iframe_frameborder" class="attrVal">
+						<option value="0"><?php _e('no', 'shortcodes_lib') ?></option>
+						<option value="1"><?php _e('yes', 'shortcodes_lib') ?></option>
+					</select>
+					<span class="description"><?php _e('(Show frame border)', 'shortcodes_lib') ?></span>
+				</div>
+				<div class="attr">
+					<span class="label"><?php _e('Scrolling', 'shortcodes_lib') ?></span>
+					<select id="iframe_scrolling" class="attrVal">
+						<option value="auto"><?php _e('auto','shortcodes_lib'); ?></option>
+						<option value="no"><?php _e('no','shortcodes_lib'); ?></option>
+						<option value="yes"><?php _e('yes','shortcodes_lib'); ?></option>
+					</select>
+					<span class="description"><?php _e('', 'shortcodes_lib') ?></span>
+				</div>
+				<div class="attr">
+					<span class="label"><?php _e('class', 'shortcodes_lib') ?></span>
+					<input type="text" id="iframe_class" class="attrVal" value="">
+					<span class="description"><?php _e('', 'shortcodes_lib') ?></span>
+				</div>
+				<div class="more_info"><?php _e('','shortcodes_lib'); ?></div>
+			</div><!-- //#my_iframe -->
 			
 			<div class="shortcode_item" id="my_column">
 				<div class="shortcode_demo">[my_column size="one-half" position="self"]<br /><?php _e('Content', 'shortcodes_lib') ?><br />[/my_column]</div>

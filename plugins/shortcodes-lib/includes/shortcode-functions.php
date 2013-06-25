@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * This file has all the main shortcode functions
  * @package Shortcodes library Plugin
  */
@@ -7,7 +7,6 @@
 
 /*
  * Fix Shortcodes
- * @since v1.0
  */
 if( !function_exists('my_fix_shortcodes') ) {
 	function my_fix_shortcodes($content){   
@@ -25,7 +24,6 @@ if( !function_exists('my_fix_shortcodes') ) {
 
 /*
  * Clear Floats
- * @since v1.0
  */
 if( !function_exists('my_clear_floats_shortcode') ) {
 	function my_clear_floats_shortcode() {
@@ -37,7 +35,6 @@ if( !function_exists('my_clear_floats_shortcode') ) {
 
 /*
  * Spacing
- * @since v1.0
  */
 if( !function_exists('my_spacing_shortcode') ) {
 	function my_spacing_shortcode( $atts ) {
@@ -45,7 +42,7 @@ if( !function_exists('my_spacing_shortcode') ) {
 			'size' => '20px',
 		  ),
 		  $atts ) );
-	 return '<hr class="my-spacing" style="height: '. $size .'"></hr>';
+	 return '<span class="my-spacing" style="height: '. $size .'"></span>';
 	}
 	add_shortcode( 'my_spacing', 'my_spacing_shortcode' );
 }
@@ -53,7 +50,6 @@ if( !function_exists('my_spacing_shortcode') ) {
 
 /*
  * Divider
- * @since v1.1
  */
 if( !function_exists('my_divider_shortcode') ) {
 	function my_divider_shortcode( $atts ) {
@@ -131,7 +127,6 @@ if ( !function_exists( 'my_highlight_shortcode' ) ) {
 
 /*
  * Buttons
- * @since v1.0
  */
 if( !function_exists('my_button_shortcode') ) {
 	function my_button_shortcode( $atts, $content = null ) {
@@ -154,8 +149,6 @@ if( !function_exists('my_button_shortcode') ) {
 
 /*
  * Boxes
- * @since v1.0
- *
  */
 if( !function_exists('my_box_shortcode') ) { 
 	function my_box_shortcode( $atts, $content = null ) {
@@ -176,8 +169,6 @@ if( !function_exists('my_box_shortcode') ) {
 
 /*
  * Testimonial
- * @since v1.0
- *
  */
 if( !function_exists('my_testimonial_shortcode') ) { 
 	function my_testimonial_shortcode( $atts, $content = null  ) {
@@ -197,8 +188,6 @@ if( !function_exists('my_testimonial_shortcode') ) {
 
 /*
  * Columns
- * @since v1.0
- *
  */
 if( !function_exists('my_column_shortcode') ) {
 	function my_column_shortcode( $atts, $content = null ){
@@ -214,7 +203,6 @@ if( !function_exists('my_column_shortcode') ) {
 
 /*
  * Toggle
- * @since v1.0
  */
 if( !function_exists('my_toggle_shortcode') ) {
 	function my_toggle_shortcode( $atts, $content = null ) {
@@ -232,8 +220,6 @@ if( !function_exists('my_toggle_shortcode') ) {
 
 /*
  * Accordion
- * @since v1.0
- *
  */
 
 
@@ -268,8 +254,6 @@ if( !function_exists('my_accordion_section_shortcode') ) {
 
 /*
  * Tabs
- * @since v1.0
- *
  */
 if (!function_exists('my_tabgroup_shortcode')) {
 	function my_tabgroup_shortcode( $atts, $content = null ) {
@@ -313,8 +297,6 @@ if (!function_exists('my_tab_shortcode')) {
 
 /*
  * Pricing Table
- * @since v1.0
- *
  */
 
 
@@ -380,7 +362,6 @@ if( !function_exists('my_pricing_shortcode') ) {
 
 /*
  * Heading
- * @since v1.1
  */
 if( !function_exists('my_heading_shortcode') ) {
 	function my_heading_shortcode( $atts ) {
@@ -411,7 +392,6 @@ if( !function_exists('my_heading_shortcode') ) {
 
 /*
  * Google Maps
- * @since v1.1
  */
 if (! function_exists( 'my_shortcode_googlemaps' ) ) :
 	function my_shortcode_googlemaps($atts, $content = null) {
@@ -441,4 +421,47 @@ if (! function_exists( 'my_shortcode_googlemaps' ) ) :
 	   
 	}
 	add_shortcode("my_googlemap", "my_shortcode_googlemaps");
+endif;
+
+
+/*
+ * Iframe
+ */
+if (! function_exists( 'my_shortcode_iframe' ) ) :
+// [my_iframe width="50%" height="100%" frameborder="0" scrolling="auto" class="my_iframe_full"]http://www.business-geografic.com/[/my_iframe]
+	function my_shortcode_iframe( $atts, $content = null ) {
+		extract(shortcode_atts(array(
+			'iframe_width' 		=> '100%',
+			'iframe_height' 		=> '480',
+			'iframe_frameborder'	=> '0',
+			'iframe_scrolling'		=> 'auto',
+			'iframe_class'			=> '',
+		), $atts));
+		
+			if( $iframe_height == "100%" ){
+				$iframe_height = "480";
+				$out .= '
+					<script type="text/javascript">
+					// auto resize .my_iframe height
+					function iframeResizer(){
+						//jQuery(".my_iframe").height(jQuery(".my_iframe").contents().find("html")[0].scrollHeight + 25); 
+                        jQuery(".my_iframe").height(jQuery(".my_iframe").contents().find("body").height()); 
+					}
+					jQuery(document).ready(function() {
+						jQuery(".my_iframe").load(function() {
+						   iframeResizer(); 
+						});
+					});
+					</script>
+					';
+			}// if $auto = 1
+			$out .= '<iframe';
+			$out .= ' class="my_iframe '.$iframe_class.'"';
+			$out .= ' src="';
+			$out .= do_shortcode($content);
+			$out .= '" width="'.$iframe_width.'" height="'.$iframe_height.'" frameborder="'.$iframe_frameborder.'" scrolling="'.$iframe_scrolling.'">'.__( 'Iframe content', 'mytheme' ).'</iframe>';
+		
+		return $out;
+	}
+	add_shortcode('my_iframe', 'my_shortcode_iframe');
 endif;
